@@ -3,11 +3,11 @@ import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import List, Dict
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score
 from sklearn import datasets
 
-# TODO: import a knn classifier here
+from sklearn.neighbors import KNeighborsClassifier
 
 
 def plot_function(K_values: List[int], cv_scores: Dict[str, List[float]]) -> None:
@@ -27,7 +27,7 @@ def plot_function(K_values: List[int], cv_scores: Dict[str, List[float]]) -> Non
         ax[i].set_ylabel('CV Accuracy')
         ax[i].grid(True)
 
-    plt.savefig('plots.jpg')
+    plt.savefig('plots.png')
     plt.show()
 
 
@@ -48,16 +48,23 @@ def main(test_portion: float) -> None:
                                                         test_size=test_portion,
                                                         random_state=28)
 
-    # TODO: define the range of your K and d hyperparameters here as a list.
-    K_values = None
+    # Hyperparameters K and d.
+    K_values = [k for k in range(1, int(0.9*len(y_train))-1)]
     distance_metrics = ['euclidean', 'manhattan']
 
     # dictionary that will hold the cross-validation results for each metric
     cv_scores = {key: [] for key in distance_metrics}
 
-    # TODO: Implement the loop over the d and K values here and update cv_scores with
-    #       the 10-fold cross-validation accuracy achieved for each combination of d and K
-
+    # 10-fold cross-validation accuracy for each combination of d and K
+    for d in distance_metrics:
+        for k in K_values:
+            cv_score = cross_val_score(
+                KNeighborsClassifier(n_neighbors=k, metric=d),
+                X_train,
+                y_train,
+                cv=10
+            )
+            cv_scores[d].append(cv_score.mean())
 
     # TODO: Select the best configurations based on the cross-validation accuracy 
     #       (it might be more than one) and add them to optimal_configs. optimal_configs
@@ -65,13 +72,19 @@ def main(test_portion: float) -> None:
     #       the second one the distance d of the best configuration.
     #       E.g. optimal_config = [[38, 'euclidean'], [3, 'manhattan']]
     optimal_configs = []
+    for d in distance_metrics:
+        values = np.array(cv_scores[d])
+        max_ = values.max()
+        for i in np.argwhere(values == max_):
+            optimal_configs.append([i[0], d])
 
-    # TODO: for each optimal configuration report the performance of KNN on the test set
-    for config in optimal_configs:
-        accuracy = np.random.randn()
-        logging.info('\nThe accuracy of KNN with (K, d) = (%d, %s) is %.3f.'.format(config[0],
-                                                                                    config[1],
-                                                                                    accuracy))
+    # Report the performance of each optimal config of KNN on the test set
+    for k, d in optimal_configs:
+        knn = KNeighborsClassifier(n_neighbors=k, metric=d)
+        knn.fit(X_train, y_train)
+        y_pred = knn.predict(X_test)
+        accuracy = accuracy_score(y_test, y_pred)
+        logging.info('\nThe accuracy of KNN with (K, d) = (%d, %s) is %.3f.', k, d, accuracy)
 
     plot_function(K_values, cv_scores)
 

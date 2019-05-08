@@ -1,6 +1,7 @@
 import logging
 import argparse
 import numpy as np
+from scipy import stats
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn import datasets
@@ -35,7 +36,28 @@ class KNN(object):
         :distance: distance metric. Either 'euclidean' or 'manhattan'
         :return: np.ndarray of predicted classes
         """
-        raise NotImplementedError
+        # Shapes:
+        # X_test=(pred, features)
+        # X_train=(train, features)
+        # diff=(pred, train, features)
+        # Calculate the difference of the features
+        diff = np.expand_dims(X_test, axis=1) - np.expand_dims(self.X_train, axis=0)
+
+        # Apply the distance metric
+        if distance == 'manhattan':
+            # dist=(pred, train)
+            dists = np.abs(diff).sum(axis=2)
+        elif distance == 'euclidean':
+            dists = np.sqrt((diff**2).sum(axis=2))
+        else:
+            raise NotImplementedError("Unknown distance metric '{}'.".format(distance))
+
+        # i=(pred, K)
+        # Find the K nearest neighours
+        i = np.argpartition(dists, self.K, axis=1)[:, :self.K]
+
+        # Return the class with the highest prob for each test sample
+        return stats.mode(self.y_train[i], axis=1)[0]
 
 
 def main(K: int, distance: str, test_portion: float) -> None:
@@ -64,11 +86,11 @@ def main(K: int, distance: str, test_portion: float) -> None:
     knn.fit(X_train, y_train)
 
     # make the predictions on the test set
-    preds = knn.predict(X_test, distance=d)
+    preds = knn.predict(X_test, distance=distance)
 
     # compute the accuracy of your predictions
     accuracy = accuracy_score(y_test, preds)
-    logging.info('Test accuracy (K=%d, d=%s): %.3f'%(K, d, float(accuracy)))
+    logging.info('Test accuracy (K=%d, d=%s): %.3f'%(K, distance, float(accuracy)))
 
 
 if __name__=='__main__':
