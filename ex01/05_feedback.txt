@@ -1,0 +1,11 @@
+Group: 05
+Exercise: 01
+Total: 1/1 point
+
+Comments:
+In principle your solution contains all necessary answers and I see that you understood the question, but I also noticed that you copied some answers word for word from your references. In future exercises, we will deduct points for that.
+
+Some of the statements you made, require some clarification, e.g.
+ * "n_estimators": to estimate how many maximum number of estimators to be used --> "n_estimators" is the number of trees trained by AdaBoots
+ * AdaBoost is very prone to overfitting, so training as many trees is not always the best solution.
+ * "Could be linear, nonlinear or polynomial." - A polynomial kernel is a non-linear kernel
