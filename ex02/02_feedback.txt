@@ -1,0 +1,8 @@
+Group: 05
+Exercise: 02
+Total: 3/3 point
+
+Comments:
+
+ * I really liked the fact that the code was clear and you used numpy functionalities to make life easier. Well done! :)
+
