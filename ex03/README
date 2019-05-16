@@ -1,0 +1,3 @@
+# Additional requirements
+*scipy*
+We use the statistics package of scipy. In particular the function [scipy.stats.mode] (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mode.html#scipy.stats.mode). From the docs:"Return an array of the modal (most common) value in the passed array."
