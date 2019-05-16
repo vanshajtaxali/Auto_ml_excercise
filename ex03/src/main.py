@@ -25,8 +25,34 @@ def paired_permutation_test(data_A, data_B, repetitions=10000) -> float:
     :param repetitions: number of repetitions to use for the test
     :return:p-value
     """
-    p_value = np.random.uniform(0, 1)
+
+    '''
+    Implementation, Idea from
+    https://stackoverflow.com/questions/24795535/pythons-implementation-of-permutation-test-with-permutation-number-as-input
+    '''
+    #whether the mean of a is better than the mean of b
+    #Ho : that the mean of a is better than b
+    #alpha = i.e., acceptable Type-I error to reject null hypothesis
+
+    alpha = 0.01
+    print('the choosen alpha value:',alpha)
+
+    t_value = np.abs(np.mean(data_A) - np.mean(data_B)) #regarding the HO
+    p_value = 0
+    n = len(data_B)
+    pooled = np.concatenate([data_A, data_B])#Put x 1 , . . . , x n and y 1 , . . . , y m into a single pool
+    '''
+    S = []
+    p-value: percentile of s in S:
+    fraction of samples s in S with s < t
+    '''
+    for j in range(repetitions):
+        np.random.shuffle(pooled)
+        p_value += t_value <= np.abs(np.mean(pooled[:n]) - np.mean(pooled[n:]))
+    p_value = p_value / repetitions
     return p_value
+    #p_value = np.random.uniform(0, 1)
+    #return p_value
 
 
 def cdf_plot(data_A, data_B):
@@ -35,10 +61,11 @@ def cdf_plot(data_A, data_B):
     :param data_A: runs of configuration a
     :param data_B: runs of configuration b  
     """
-    
+    #empherical cdf is , eCDF(x) = "number of samples <= x"/"number of samples"
     # Preprocess data
-    num_points = data_A.shape[0]
-    y_axis = np.arange(num_points) / num_points
+    num_points = data_A.shape[0]# this gives us 419
+    y_axis = np.arange(num_points) / num_points # this gives 0/419
+
 
     sorted_data_A = np.sort(data_A)
     sorted_data_B = np.sort(data_B)
@@ -52,7 +79,7 @@ def cdf_plot(data_A, data_B):
     plt.legend()
     plt.savefig('step.png')
     plt.show()
-
+    
     i1 = np.where(sorted_data_A < .4)[0][-1]
     i2 = np.where(sorted_data_B < .4)[0][-1]
     logging.info("A: P(error < {:.3}) = {:.3}".format(sorted_data_A[i1], y_axis[i1]))
@@ -65,12 +92,16 @@ def scatter_plot(data_A, data_B):
     :param data_A: runs of configuration a
     :param data_B: runs of configuration b  
     """
+    #logging.info('------------+mean of the data_a--------+-{:6.3}'.format(np.mean(data_A)))
+    #logging.info('------------+mean of the data_b--------+-{:7.3}'.format(np.mean(data_B)))
 
     # Split the data
     diff = data_B - data_A
-    i_cat1 = diff > .1
+
+    i_cat1 = diff > .1 
     i_cat2 = diff < -0.1
     i_cat3 = np.abs(diff) <= .1
+
     cat1_A = data_A[i_cat1]
     cat1_B = data_B[i_cat1]
     cat2_A = data_A[i_cat2]
@@ -109,7 +140,17 @@ def box_plot(data_A, data_B):
     :param data_A: runs of configuration a
     :param data_B: runs of configuration b  
     """
-    pass
+    data = [data_A,data_B]
+    fig = plt.figure(1, figsize=(8, 6))
+    ax = fig.add_subplot(111)
+    bp = ax.boxplot(data,patch_artist=True,widths = 0.6)
+    for median in bp['medians']:
+        median.set(color='red', linewidth=2)
+    ax.set_title('box plot')
+    ax.set_ylabel('Observed Error values')
+    ax.set_xticklabels(['data_A', 'data_B'])
+    plt.savefig('boxplot.png')
+    plt.show()
 
 def violin_plot(data_A, data_B):
     """
@@ -117,7 +158,22 @@ def violin_plot(data_A, data_B):
     :param data_A: runs of configuration a
     :param data_B: runs of configuration b  
     """
-    pass
+    data = [data_A,data_B]
+    fig = plt.figure(1, figsize=(8, 6))
+    ax1 = fig.add_subplot(111)
+    ax1.set_title('violin plot')
+    ax1.set_ylabel('Observed Error values')
+    ax1.violinplot(data)
+    labels = ['data_A', 'data_B']
+    ax1.get_xaxis().set_tick_params(direction='out')
+    ax1.xaxis.set_ticks_position('bottom')
+    ax1.set_xticks(np.arange(1, len(labels) + 1))
+    ax1.set_xticklabels(labels)
+    ax1.set_xlim(0.25, len(labels) + 0.75)
+    ax1.set_xlabel('Error values of two algorithms')
+    plt.savefig('violinplot.png')
+    plt.show()
+    
 
 
 def main(args):
@@ -141,6 +197,7 @@ def main(args):
     # TODO
     alpha = None
     statistic = paired_permutation_test(data_A, data_B, repetitions=10000)
+    print(statistic)
 
 if __name__ == '__main__':
     cmdline_parser = argparse.ArgumentParser('ex03')
@@ -157,3 +214,4 @@ if __name__ == '__main__':
         logging.warning(str(unknowns))
         logging.warning('These will be ignored')
     main(args)
+
