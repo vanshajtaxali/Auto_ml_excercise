@@ -1,0 +1,47 @@
+Group: 05
+Exercise: 03
+Total: 3.5/4 points (rounded to your advantage)
+
+Comments: 
+
+(a) Well done. 1P.
+(b) Well done. 0.5P.
+(c) It depends on what you want to show with a plot. I would disagree that violin plots are more informative in general. Nevertheless, your answer is fine. 0.5P.
+(d) H_0 and H_1 are correct. You did not discuss whether with your chosen alpha value you would reject H_0 or what conclusions you can draw from the results of the test. Furthermore, you implemented a single-sided non-paired permutation test instead of a paired test. 0.25P
+
+Feedback: Thanks. 1P.
+
+Minor remarks:
+ - Next time, please add all answer to the pdf
+
+
+
+-------------------------
+As some of asked during the exercise session, here is example code for a paired permutation test: 
+
+# Paired Permutation test
+print("H_0: A and B have equal means")
+print("H_1: The mean of A is better (smaller) than that of B")
+
+t = np.mean(y1) - np.mean(y2)
+print("Test statistic t: %f" % t)
+rng = np.random.RandomState(1)
+s = []
+for i in range(10000):
+    ind_dataset1 = []
+    ind_dataset2 = []
+    for i,j in zip(y1, y2):
+        if rng.random_sample() > 0.5:
+            ind_dataset1.append(i)
+            ind_dataset2.append(j)
+        else:
+            ind_dataset1.append(j)
+            ind_dataset2.append(i)
+    m1 = np.mean(ind_dataset1)
+    m2 = np.mean(ind_dataset2)
+    s.append(m1-m2)
+s = np.array(s)
+
+print("Samples with s<t: %d (of %d)" % (np.sum(s<t), len(s)))
+p = np.sum(s<t)/len(s)
+print("Then, p-value %f < alpha?" % p)

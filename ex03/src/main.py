@@ -71,8 +71,8 @@ def cdf_plot(data_A, data_B):
     sorted_data_B = np.sort(data_B)
 
     # Plot the data
-    plt.step(sorted_data_A, y_axis, 'b', label='A')
-    plt.step(sorted_data_B, y_axis, 'y', label='B')
+    plt.step(sorted_data_A, y_axis, c='b', label='A')
+    plt.step(sorted_data_B, y_axis, c='y', label='B')
     plt.title('Performance of A and B')
     plt.xlabel('Error')
     plt.ylabel('P(error < X)')
