@@ -10,6 +10,7 @@ from sklearn.gaussian_process.kernels import Matern
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+import utils
 from matplotlib import pyplot as plt
 
 
@@ -43,7 +44,13 @@ def EI(x, model, eta, add=None):
     """
     x = np.array([x]).reshape([-1, 1])
     m, s = model.predict(x, return_std=True)
-    return m
+
+    # Closed form solution from the slides
+    # CDF is the cumulative density function
+    # PDF is the probability density function
+    diff = m - eta
+    ei = diff * norm.cdf(diff / s) + s * norm.pdf(diff / s)
+    return ei
 
 def UCB(x, model, eta, add=None):
     """
@@ -55,7 +62,9 @@ def UCB(x, model, eta, add=None):
     """
     x = np.array([x]).reshape([-1, 1])
     m, s = model.predict(x, return_std=True)
-    return m
+    k = add
+    # stdev is subtracted due to our goal to minimize
+    return m - k * s
 
 
 def run_bo(acquisition, max_iter, init=25, random=True, acq_add=1, seed=1):
@@ -75,6 +84,12 @@ def run_bo(acquisition, max_iter, init=25, random=True, acq_add=1, seed=1):
         x = np.linspace(-15, 10, init).reshape(-1, 1).tolist()
     # get corresponding response values
     y = list(map(f, x))
+    incumbent = [y[0]]
+    for val in y[1:]:
+        if val < incumbent[-1]:
+            incumbent.append(val)
+        else:
+            incumbent.append(incumbent[-1])
 
     for i in range(max_iter - init):  # BO loop
         logging.debug('Sample #%d' % (init + i))
@@ -97,19 +112,86 @@ def run_bo(acquisition, max_iter, init=25, random=True, acq_add=1, seed=1):
             if opt_res.fun[0] < y_:
                 x_ = opt_res.x
                 y_ = opt_res.fun[0]
+
+        utils.plot_gp(gp, x, y, x_, acqui)
+
         x.append(x_)
         y.append(f(x_))
-    return y
+        if y[-1] < incumbent[-1]:
+            incumbent.append(y[-1])
+        else:
+            incumbent.append(incumbent[-1])
+
+    return y, incumbent
 
 def main(num_evals, init_size, repetitions, random, seed):
-    # TODO Modify as you want
-    for i in range(repetitions):
-        bo_res_1 = run_bo(max_iter=num_evals, init=init_size, random=random, acquisition=EI, acq_add=1, seed=seed+i)
-        bo_res_2 = run_bo(max_iter=num_evals, init=init_size, random=random, acquisition=UCB, acq_add=1, seed=seed+i)
-        # TODO implement random search
-        # TODO implement grid search
-        # TODO evaluation
 
+    utils.enable_gp_plots = False
+    # Plot target function
+    # utils.plot_target()
+
+    ei_inc = np.ndarray(shape=(repetitions, num_evals))
+    ucb_inc = np.ndarray(shape=(repetitions, num_evals))
+    rs_inc = np.ndarray(shape=(repetitions, num_evals))
+
+    for i in range(repetitions):
+        # utils.plot plots every step of the GP defined by the range object
+        # range(2) means the first two steps will be plotted
+        # range(0, 5, 2) means the first, third and fifth step will be plotted
+        with utils.plot(range(2)):
+            _, ei_inc[i, :] = run_bo(max_iter=num_evals, init=init_size, random=random, acquisition=EI, acq_add=1, seed=seed+i)
+        with utils.plot(range(2)):
+            _, ucb_inc[i, :] = run_bo(max_iter=num_evals, init=init_size, random=random, acquisition=UCB, acq_add=1, seed=seed+i)
+        # Random search
+        for j, x in enumerate(np.random.uniform(-15, 10, num_evals).reshape(-1, 1).tolist()):
+            # for the incumbent, either append the function value when its better or the previous incumbent value
+            if j == 0 or f(x) < rs_inc[i,j-1]:
+                rs_inc[i, j] = f(x)
+            else:
+                rs_inc[i, j] = rs_inc[i, j-1]
+
+    # TODO implement grid search
+    # Gridsearch doesn't need repetition because it is not random
+    gs_inc = []
+    for x in np.linspace(-15, 10, num_evals).reshape(-1, 1).tolist():
+        # for the incumbent, either append the function value when its better or the previous incumbent value
+        if len(gs_inc) == 0 or f(x) < gs_inc[-1]:
+            gs_inc.append(f(x))
+        else:
+            gs_inc.append(gs_inc[-1])
+
+
+    # TODO evaluation
+    x = np.arange(num_evals)
+    ei_mean = ei_inc.mean(axis=0)
+    ei_std = ei_inc.std(axis=0)
+    ucb_mean = ucb_inc.mean(axis=0)
+    ucb_std = ucb_inc.std(axis=0)
+    rs_mean = rs_inc.mean(axis=0)
+    rs_std = rs_inc.std(axis=0)
+
+    plt.step(x, ei_mean, c='b', label="EI + std")
+    plt.fill_between(x,
+        ei_mean - ei_std,
+        ei_mean + ei_std,
+        alpha=.3, color='b', step='pre')
+
+    plt.step(x, ucb_mean, c='g', label="UCB + std")
+    plt.fill_between(x,
+        ucb_mean - ucb_std,
+        ucb_mean + ucb_std,
+        alpha=.3, color='g', step='pre')
+    plt.step(x, rs_mean, c='c', label="Randomsearch")
+    plt.fill_between(x,
+        rs_mean - rs_std,
+        rs_mean + rs_std,
+        alpha=.3, color='c', step='pre')
+    plt.step(x, gs_inc, c='r', label="Gridsearch")
+    plt.legend()
+    plt.title("Incumbent")
+    plt.xlabel("# function evaluations")
+    plt.ylabel("best seen function value")
+    plt.show()
 
 if __name__ == '__main__':
     cmdline_parser = argparse.ArgumentParser('ex06')
