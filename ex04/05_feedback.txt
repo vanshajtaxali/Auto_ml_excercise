@@ -1,0 +1,55 @@
+Group: 05
+Exercise: 04
+Total: 4.5/5 points (rounded to your advantage)
+
+Comments: 
+
+(a) EI: Your implementation of EI would be work for maximizing the objective function (and also for maximizing the acquisition value). But in this exercise we minimize both. Your implementation picks the point that is expected to return a minimally higher value that the currently lowest point (which is the lowest point itself (e.g can be seen in Figure 2, first row)
+    UCB/LCB: Well done. 
+    0.5 P.
+(b) EI: As above, e.g. Figure 2 upper plot. You can clearly see that your implementation of EI predicts some improvement for x-values where there is no improvement possible, e.g. already observed points.
+    LCB: Well done.
+    You created the correct plots with all the necessary details. 0.75 P.
+(c) Well done. 1 P.
+(d) Well done. 1 P. (Although you are right that gridsearch does not involve randomness when creating the points to evaluate, the resulting trajectory will vary as the ordering of the points can be different, e.g. from large to small x-values, from small to large x-values, shuffled order.)
+
+Feedback: Thanks. 1 P.
+
+Minor remarks:
+ - If the difference between to methods is very small, you could consider showing the performance on a log-scale, e.g. in Figure 1
+ - Regarding your question in the caption of Figure 3: The GP in the lower left plot might look broken, but actually it fits all points perfectly. It is very likely that it uses a very small lengthscale (after optimizing its hyperparameters) and hence produces sudden changes in y.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Other remarks:
+
+In the exercises I mentioned that there is a paper comparing mean and median for BO runs. Although this is not the main topic of the paper, Figure 2 shows the difference: 
+
+Minimum Regret Search for Single- and Multi-Task Optimization
+Jan Hendrik Metzen (2016)
+https://arxiv.org/pdf/1602.01064.pdf
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Also, here are two papers having equations for EI and UCB/LCB for maximizing and minimizing objective functions:
+
+#####
+
+Maximizing objective function:
+A Tutorial on Bayesian Optimization ofExpensive Cost Functions, with Application toActive User Modeling and HierarchicalReinforcement Learning
+Eric Brochu, Vlad M. Cora, Nando de Freitas (2010)
+https://arxiv.org/pdf/1012.2599.pdf
+
+EI: see Equation (14)
+UCB/LCB see Section 2.3.3
+
+#####
+
+Minimizing objective function:
+Efficient Global Optimization of Expensive Black-Box Functions
+D. Jones, M. Schonlau, W. Welch (1998)
+http://www.ressources-actuarielles.net/ext/isfa/1226.nsf/9c8e3fd4d8874d60c1257052003eced6/f84f7ac703bf5862c12576d8002f5259/$file/jones98.pdf
+
+EI: See Equation (15)
+Also take a look at Figure 11 to see what EI typically looks like.
+
+#####
