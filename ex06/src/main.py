@@ -35,14 +35,27 @@ def gp_prediction_a(data: np.ndarray, X: np.ndarray, phi: callable, sigma_n: flo
     :return: mean and variance for all points in X
     """
     # TODO compute parts
+    # Phi: (N,n) matrix, N is the feature space after phi is applied, n is the number of observations
+    Phi = np.apply_along_axis(phi, 0, data[:, 0])
+    # A: (N,N) matrix
+    A = sigma_n ** -2 * Phi @ Phi.T + np.linalg.inv(Sigma_p)
+    A_inv = np.linalg.inv(A)
+    # y: n-dim vector
+    y = data[:, 1]
+
+    tmp1 = A_inv @ Phi @ y
 
     # for storing the results
     means = []
     variances = []
     # loop over all X
     for xs in X:
-        pass
         # TODO compute mean and variance
+        phi_star =  phi(xs).reshape((-1,1))
+        mean = sigma_n ** -2 * phi_star.T @ tmp1
+        means.append(mean)
+        variance = phi_star.T @ A_inv @ phi_star
+        variances.append(variance.flatten())
 
     return np.array(means), np.array(variances)
 
@@ -77,11 +90,18 @@ num_features = 2
 means, variances = gp_prediction_a(train_data, x, phi_n_of_x(num_features), 1.0, np.eye(num_features))
 
 # TODO plot model prediction
+x_axis = np.arange(len(means))
+plt.plot(x_axis, means, 'b-', label='GP Mean + Stddev')
+plt.fill(np.concatenate([x_axis, x_axis[::-1]]),
+    np.concatenate([means - variances, (means + variances)[::-1]]),
+    alpha=.5, fc='b', ec='None')
+
+
 plt.title('Bayesian linear regression example')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
-# plt.savefig('plot1.pdf')
+plt.savefig('plot1.png')
 
 
 # ##################################################### Exercise (c)
