@@ -1,0 +1,13 @@
+Exercise 1b missing 0pt
+
+Exercise 1a:
+Instead of clipping the values for the mutation, you could have resampled again.
+It looks like mutation and crossover are implemented correctly but not the optimization loop.
+As you iterate over each population member you create a trial for each member. So in each iteration you already have #population_size function evaulations.
+You were tasked to run DE for a given number of function evaluations (of which you have far too many) -1pt.
+The plot you chose to show your DE implementation works is quite confusing. I'm not exactly sure what your X-axis is supposed to show.
+
+Feedback:
+Thank you for your feedback. Next time please be more specific such that we know what took you one day and why. This really helps us improve exercises.
+
+Overall 3pt
