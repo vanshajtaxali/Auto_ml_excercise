@@ -1,0 +1,10 @@
+Exercise 1a correct. 2/2 pt
+
+Exercise 1b correctly implemented but falsely plotted. You plotted the mean +- variance (i.e. sigma^2) as uncertainty and not the standard deviation (i.e. 2*sigma) as asked. -1 pt
+
+Exercis 1c correctly implemented. 2/2 pt
+
+Thank you for your feedback. .5pt
+Please try to state also which exercise took you most time such that we can better balance the workloads on different sheets.
+
+Overall 5.5/6
