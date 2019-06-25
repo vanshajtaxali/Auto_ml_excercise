@@ -41,14 +41,16 @@ class Architect(object):
         """
         self.arch_optimizer.zero_grad()
         #TODO: do a forward pass using the validation mini-batch input
-
+        outputs = self.model(input_valid)
         #TODO: compute the loss using self.criterion and backpropagate to
         #      compute the gradients w.r.t. the alphas
+        loss = self.criterion(outputs,target_valid)
+        loss.backward()
 
         #TODO: do a step in the architecture space using the
         #      self.arch_optimizer
-
-
+        self.arch_optimizer.step()
+        
 def train(train_loader, valid_loader, model, architect, criterion,
           optimizer, device):
     """

@@ -44,19 +44,20 @@ class MixedOp(nn.Module):
         or alphas_reduce
         """
         #TODO: compute the softmax of the alphas parameter
-
+        alphas = F.softmax(alphas,dim=-1)
 
         list_of_tensors = []
         #TODO: for each operation in self._ops compute the output when it gets
         #      x as input, i.e. op(x) and then multiply it element-wise with
-        #      the corresponding alpha vector and add it to the list_of_tensors
-
+        #      the corresponding alpha vector and add it to the list_of_tensor
+        for alpha,op in zip(alphas, self._ops):
+            list_of_tensors.append(alpha*op(x))
 
 
         #TODO: add element-wise all the tensors in list of tensors and return
         #      it as output of this method
-
-
+        return(sum(list_of_tensors))
+        
 
 class Cell(nn.Module):
     """Base class for the cells in the search model."""
