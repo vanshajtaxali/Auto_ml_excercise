@@ -1,0 +1,5 @@
+Ex01: You can not add the possible outcomes of different events, you have to multiply them. Consider that the decisions made at each intermediate node to be one event n_i, and each of these events is unaffected by the outcomes of the other. Then the number of possible outcomes overall is m_1 x m_2 x ... x m_i, where m_i are the possible outcomes of event n_i [0.5/2]
+
+Ex02: This part was correctly solved. I do not have any comments. Well done! :) [5/5]
+
+5.5/7
