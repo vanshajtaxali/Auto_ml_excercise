@@ -1,0 +1,4 @@
+IT took extensive search from google to understand what openai gym is? how does env works and what are spaces of type boxes.
+It wasn't that great to have an exercise to directly get started with reinforcement learning.
+Overall took almost 3 days of searching and reading. Basically figuring out what TO DO's mean rather than learning something new.
+
