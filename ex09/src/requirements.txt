@@ -1,0 +1,7 @@
+argparse
+numpy
+matplotlib
+sklearn
+gym
+
+# add your requirements below this line
