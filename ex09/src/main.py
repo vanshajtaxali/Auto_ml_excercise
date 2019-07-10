@@ -87,19 +87,31 @@ class QTable(dict):
         :param float_to_int: flag to determine if state values need to be rounded to the closest integer
         """
         super().__init__(**kwargs)
-        raise NotImplementedError
+        # For each entry generate a list with n_action entries
+        self.data = defaultdict(lambda: [1 for _ in range(n_actions)])
+        self.float_to_int = float_to_int
 
     def __getitem__(self, item):
-        raise NotImplementedError
+        return self.data[self._normalize(item)]
 
     def __setitem__(self, key, value):
-        raise NotImplementedError
+        self.data[self._normalize(key)] = value
 
     def __contains__(self, item):
-        raise NotImplementedError
+        return self._normalize(item) in self.data
 
     def keys(self):
-        raise NotImplementedError
+        return self.data.keys()
+    
+    def _normalize(self, item):
+        """Transform a list into a tuple so that it is hashable
+
+        If float_to_int was set, each entry gets rounded to the
+        closest integer
+        """
+        if self.float_to_int:
+            return tuple([int(round(x)) for x in item])
+        return tuple(item)
 
 
 def make_epsilon_greedy_policy(Q: QTable, epsilon: float, nA: int) -> callable:
@@ -197,7 +209,7 @@ def q_learning(environment: SigmoidMultiValAction,
     assert alpha > 0, 'Learning rate has to be positive'
     # The action-value function.
     # Nested dict that maps state -> (action -> action-value).
-    Q = QTable(env.action_space.n, float_state)  # TODO modify as necessary for your Q-table
+    Q = QTable(environment.action_space.n, float_state)  # TODO modify as necessary for your Q-table
 
     # Keeps track of episode lengths and rewards
     train_stats = EpisodeStats(
@@ -214,6 +226,18 @@ def q_learning(environment: SigmoidMultiValAction,
         if (i_episode + 1) % 100 == 0:
             print("\rEpisode {:>5d}/{}\tReward: {:>4.2f}".format(i_episode + 1, num_episodes, train_reward), end='')
         # TODO rollout episode following the current policy and update Q
+        s_t = environment.reset()
+        while True:
+            a_t = np.random.choice(list(range(environment.action_space.n)), p=policy(s_t))
+            s_t_plus_1, r_t, evaluation_done, _ = environment.step(a_t)
+            q = Q[s_t]
+
+            q[a_t] = (1-alpha) * q[a_t] + alpha * (r_t + discount_factor * max(Q[s_t_plus_1]))
+            Q[s_t] = q
+
+            if evaluation_done:
+                break
+            s_t = s_t_plus_1
 
         # Keep track of training reward
         train_reward, train_expected_reward = greedy_eval_Q(Q, environment, nevaluations=number_of_evaluations)
@@ -232,6 +256,35 @@ def zeroOne(stringput):
     if val < 0 or val > 1.:
         raise argparse.ArgumentTypeError("%r is not in [0, 1]", stringput)
     return val
+
+
+def hpo_loop(args):
+    epsilon_decays = ['const', 'linear', 'log']
+    alphas = [.125, .1, .2]
+    epsilons = [0.01, 0.05, 0.1]
+
+    sets = [(x,y,z) for x in epsilon_decays for y in alphas for z in epsilons]
+
+    for r, (x,y,z) in enumerate(sets):
+        logging.info('Round %d/%d: eps: %f, eps_decay: %s, lr: %f', r + 1, len(sets), z, x, y)
+        env = SigmoidMultiValAction()
+        q_func, train_stats = q_learning(env,
+                                         args.neps,
+                                         discount_factor=args.df,
+                                         alpha=y,
+                                         epsilon=z,
+                                         float_state=True,
+                                         epsilon_decay=x,
+                                         decay_starts=args.decay_starts,
+                                         number_of_evaluations=1)
+        fn = '%04d_%s-greedy-results-%s-%d_eps-%d_reps-seed_%d.pkl' % (r, str(args.epsilon), 'sig', args.neps,
+                                                                       args.repetitions, args.seed)
+        with open(fn.replace('results', 'q_func'), 'wb') as fh:  # TODO modify s.t. your Q function can be stored
+            pickle.dump(dict(q_func), fh)
+        with open(fn.replace('results', 'trueReward'), 'wb') as fh:
+            pickle.dump(train_stats.episode_rewards, fh)
+        with open(fn.replace('results', 'expectedReward'), 'wb') as fh:
+            pickle.dump(train_stats.expected_rewards, fh)
 
 
 if __name__ == '__main__':
@@ -278,6 +331,10 @@ if __name__ == '__main__':
     else:
         logging.basicConfig(level=logging.INFO)
     np.random.seed(args.seed)
+
+    # hpo_loop(args)
+    # exit()
+
     q_func = None
     # tabular Q
     ds = datetime.date.strftime(datetime.datetime.now(), "%Y_%m_%d_%H_%M_%S_%f")

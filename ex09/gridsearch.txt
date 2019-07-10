@@ -1,0 +1,55 @@
+NFO:root:Round 1/27: eps: 0.010000, eps_decay: const, lr: 0.125000
+Episode 10000/10000     Reward: 7.82
+INFO:root:Round 2/27: eps: 0.050000, eps_decay: const, lr: 0.125000
+Episode 10000/10000     Reward: 9.69
+INFO:root:Round 3/27: eps: 0.100000, eps_decay: const, lr: 0.125000
+Episode 10000/10000     Reward: 10.16
+INFO:root:Round 4/27: eps: 0.010000, eps_decay: const, lr: 0.100000
+Episode 10000/10000     Reward: 7.80
+INFO:root:Round 5/27: eps: 0.050000, eps_decay: const, lr: 0.100000
+Episode 10000/10000     Reward: 10.08
+INFO:root:Round 6/27: eps: 0.100000, eps_decay: const, lr: 0.100000
+Episode 10000/10000     Reward: 9.63
+INFO:root:Round 7/27: eps: 0.010000, eps_decay: const, lr: 0.200000
+Episode 10000/10000     Reward: 8.61
+INFO:root:Round 8/27: eps: 0.050000, eps_decay: const, lr: 0.200000
+Episode 10000/10000     Reward: 10.16
+INFO:root:Round 9/27: eps: 0.100000, eps_decay: const, lr: 0.200000
+Episode 10000/10000     Reward: 10.12
+INFO:root:Round 10/27: eps: 0.010000, eps_decay: linear, lr: 0.125000
+Episode 10000/10000     Reward: 7.94
+INFO:root:Round 11/27: eps: 0.050000, eps_decay: linear, lr: 0.125000
+Episode 10000/10000     Reward: 8.89
+INFO:root:Round 12/27: eps: 0.100000, eps_decay: linear, lr: 0.125000
+Episode 10000/10000     Reward: 9.89
+INFO:root:Round 13/27: eps: 0.010000, eps_decay: linear, lr: 0.100000
+Episode 10000/10000     Reward: 6.57
+INFO:root:Round 14/27: eps: 0.050000, eps_decay: linear, lr: 0.100000
+Episode 10000/10000     Reward: 9.66
+INFO:root:Round 15/27: eps: 0.100000, eps_decay: linear, lr: 0.100000
+Episode 10000/10000     Reward: 9.17
+INFO:root:Round 16/27: eps: 0.010000, eps_decay: linear, lr: 0.200000
+Episode 10000/10000     Reward: 7.76
+INFO:root:Round 17/27: eps: 0.050000, eps_decay: linear, lr: 0.200000
+Episode 10000/10000     Reward: 9.66
+INFO:root:Round 18/27: eps: 0.100000, eps_decay: linear, lr: 0.200000
+Episode 10000/10000     Reward: 10.16
+INFO:root:Round 19/27: eps: 0.010000, eps_decay: log, lr: 0.125000
+Episode 10000/10000     Reward: 5.33
+INFO:root:Round 20/27: eps: 0.050000, eps_decay: log, lr: 0.125000
+Episode 10000/10000     Reward: 6.74
+INFO:root:Round 21/27: eps: 0.100000, eps_decay: log, lr: 0.125000
+Episode 10000/10000     Reward: 8.39
+INFO:root:Round 22/27: eps: 0.010000, eps_decay: log, lr: 0.100000
+Episode 10000/10000     Reward: 6.99
+INFO:root:Round 23/27: eps: 0.050000, eps_decay: log, lr: 0.100000
+Episode 10000/10000     Reward: 7.87
+INFO:root:Round 24/27: eps: 0.100000, eps_decay: log, lr: 0.100000
+Episode 10000/10000     Reward: 9.65
+INFO:root:Round 25/27: eps: 0.010000, eps_decay: log, lr: 0.200000
+Episode 10000/10000     Reward: 6.58
+INFO:root:Round 26/27: eps: 0.050000, eps_decay: log, lr: 0.200000
+Episode 10000/10000     Reward: 8.05
+INFO:root:Round 27/27: eps: 0.100000, eps_decay: log, lr: 0.200000
+Episode 10000/10000     Reward: 9.37
+
