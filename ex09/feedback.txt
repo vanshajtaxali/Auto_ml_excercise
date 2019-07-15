@@ -1,0 +1,21 @@
+1. Correct. 2/2
+2. Q-learning correctly implemented.
+   Your conclusions are not correct. (-2pt)
+   Increasing the learning rate does not necessarily decrease the final reward (it just happens to be the case in this setting).
+   The learning rate handles exactly as in the deep learning setting, where it handles how quickly information is propagated. If you have a stochastic setting
+   you probably want to set the learning rate small so to not overshoot some optimum. In the discrete setting presented here, the optimal learning rate is 1
+   as it allows you to quickly propagate the information about the true reward from the goal state to the starting state.
+   Learning-rates above 1 usually cause divergent behaviour. For this discrete setting that was not the case as the environment was fairly restrictive.
+   You write about the discount factor but I assume you mean the exploration factor. Decreasing the exploration factor also not necessarily will decrease the
+   final reward. As the name suggests, it tradesoff exploration and exploitation. Higher values allow you to quickly explore the state-space whereas low values
+   make you greedily stick to the best actions.
+   3/5
+
+3 Plots look good. 2/2
+
+Feedback:
+   Thank you for your feedback.
+   In case some things are not clear you can talk to one of the TAs or the lecturers or directly ask in the forum.
+   If you have any more questions about the environment or RL you can either ask me after the next exercise session or drop by my (André) office.
+   
+7.5/9pt
