@@ -1,0 +1,2759 @@
+{
+  "data": [
+    [
+      [
+        1,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        1,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        2.1522,
+        2.1522,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.288,
+        0.288,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.3157,
+        0.3157,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        10,
+        1.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.0995,
+        0.0995,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.3135,
+        0.3135,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.1151,
+        0.1151,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.0235,
+        0.0235,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.11,
+        0.11,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.0497,
+        0.0497,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        3.6255,
+        3.6255,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        7,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.0451,
+        0.0451,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.0352,
+        0.0352,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.0267,
+        0.0267,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        3.4186,
+        3.4186,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.0214,
+        0.0214,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.9451,
+        0.9451,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.0869,
+        0.0869,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3089-3169.cnf",
+        970653965
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.0749,
+        0.0749,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a897_s5_satelite.cnf",
+        1526046390
+      ],
+      [
+        1.2382,
+        1.2382,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        3.3502,
+        3.3502,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "indu/cbmc_binsearch-sat-lin.c_a897_s5_satelite.cnf",
+        1526046390
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3229-3413.cnf",
+        1042666993
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        13,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        10,
+        1.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/cbmc_binsearch-sat-lin.c_a213_s4_satelite.cnf",
+        438667483
+      ],
+      [
+        0.0268,
+        0.0268,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        14,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        10,
+        1.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3253-3361.cnf",
+        1665848788
+      ],
+      [
+        4.1344,
+        4.1344,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        15,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        15,
+        "indu/factor-3089-3169.cnf",
+        970653965
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        15,
+        "indu/cbmc_binsearch-sat-lin.c_a897_s5_satelite.cnf",
+        1526046390
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "indu/factor-3251-3733.cnf",
+        1282821875
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3251-3733.cnf",
+        1282821875
+      ],
+      [
+        1.3946,
+        1.3946,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.0393,
+        0.0393,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.0215,
+        0.0215,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3253-3361.cnf",
+        1665848788
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        2.4918,
+        2.4918,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        1.8631,
+        1.8631,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3083-3613.cnf",
+        1298508491
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a897_s5_satelite.cnf",
+        1526046390
+      ],
+      [
+        0.2664,
+        0.2664,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3229-3413.cnf",
+        1042666993
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        1.475,
+        1.475,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3089-3169.cnf",
+        970653965
+      ],
+      [
+        4.8094,
+        4.8094,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a213_s4_satelite.cnf",
+        438667483
+      ],
+      [
+        0.0566,
+        0.0566,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a24_s4_satelite.cnf",
+        1013994432
+      ],
+      [
+        0.0267,
+        0.0267,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3083-3797.cnf",
+        1009600635
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        17,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        20,
+        2.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a1795_s6_satelite.cnf",
+        2087314034
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        18,
+        "indu/factor-3089-3169.cnf",
+        970653965
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3253-3463.cnf",
+        1981342533
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        19,
+        "indu/cbmc_binsearch-sat-lin.c_a213_s4_satelite.cnf",
+        438667483
+      ],
+      [
+        10,
+        1.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a1154_s5_satelite.cnf",
+        331002963
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/cbmc_binsearch-sat-lin.c_a1154_s5_satelite.cnf",
+        331002963
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        0.1043,
+        0.1043,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/factor-3253-3361.cnf",
+        1665848788
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a449_s5_satelite.cnf",
+        1641118818
+      ],
+      [
+        0.1337,
+        0.1337,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "indu/factor-3229-3413.cnf",
+        1042666993
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "indu/cbmc_binsearch-sat-lin.c_a1698_s6_satelite.cnf",
+        174377856
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "indu/factor-3083-3797.cnf",
+        1009600635
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "indu/cbmc_binsearch-sat-lin.c_a449_s5_satelite.cnf",
+        1641118818
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3019-3089.cnf",
+        1455046481
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        22,
+        "indu/cbmc_binsearch-sat-lin.c_a1411_s6_satelite.cnf",
+        1261063143
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        22,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        3.7491,
+        3.7491,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        22,
+        "indu/factor-3229-3413.cnf",
+        1042666993
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3301-3539.cnf",
+        346963477
+      ],
+      [
+        1.9754,
+        1.9754,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        23,
+        "indu/factor-3251-3733.cnf",
+        1282821875
+      ],
+      [
+        20,
+        2.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3109-3923.cnf",
+        1115396103
+      ],
+      [
+        0.636,
+        0.636,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        24,
+        "indu/cbmc_binsearch-sat-lin.c_a514_s4_satelite.cnf",
+        1484172013
+      ],
+      [
+        0.8546,
+        0.8546,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a1538_s6_satelite.cnf",
+        1327476640
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        25,
+        "indu/factor-3163-3923.cnf",
+        801015372
+      ],
+      [
+        20,
+        2.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a92_s4_satelite.cnf",
+        910361965
+      ],
+      [
+        0.0229,
+        0.0229,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        26,
+        "indu/factor-3253-3463.cnf",
+        1981342533
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        26,
+        "indu/cbmc_binsearch-sat-lin.c_a71_s6_satelite.cnf",
+        1777953348
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        26,
+        "indu/cbmc_binsearch-sat-lin.c_a1795_s6_satelite.cnf",
+        2087314034
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a117_s6_satelite.cnf",
+        1550558230
+      ],
+      [
+        0.0229,
+        0.0229,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        27,
+        "indu/factor-3253-3463.cnf",
+        1981342533
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        27,
+        "indu/cbmc_binsearch-sat-lin.c_a92_s4_satelite.cnf",
+        910361965
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        27,
+        "indu/factor-3019-3089.cnf",
+        1455046481
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a101_s4_satelite.cnf",
+        1493746592
+      ],
+      [
+        0.0225,
+        0.0225,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        28,
+        "indu/factor-3083-3371.cnf",
+        398576445
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        28,
+        "indu/factor-3229-3413.cnf",
+        1042666993
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        28,
+        "indu/cbmc_binsearch-sat-lin.c_a117_s6_satelite.cnf",
+        1550558230
+      ],
+      [
+        0.034,
+        0.034,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a546_s6_satelite.cnf",
+        649210240
+      ],
+      [
+        4.5781,
+        4.5781,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        29,
+        "indu/factor-3433-3943.cnf",
+        1624109689
+      ],
+      [
+        30,
+        3.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/cbmc_binsearch-sat-lin.c_a22_s4_satelite.cnf",
+        1944092547
+      ],
+      [
+        0.0197,
+        0.0197,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "additional_info": "; ; solubility file was not given; could not verify SAT; SAT checker was not given; could not verify SAT"
+        }
+      ]
+    ],
+    [
+      [
+        30,
+        "indu/cbmc_binsearch-sat-lin.c_a1795_s6_satelite.cnf",
+        2087314034
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        30,
+        "indu/factor-3109-3923.cnf",
+        1115396103
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "indu/factor-3083-3853.cnf",
+        1526896431
+      ],
+      [
+        50,
+        5.0,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ],
+    [
+      [
+        31,
+        "indu/factor-3187-3331.cnf",
+        1345499493
+      ],
+      [
+        30,
+        3.0,
+        {
+          "__enum__": "StatusType.CAPPED"
+        },
+        {
+          "additional_info": ";"
+        }
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Default",
+    "2": "Random Search (sorted)",
+    "3": "Random Search",
+    "4": "Random Search (sorted)",
+    "5": "Random Search (sorted)",
+    "6": "Random Search (sorted)",
+    "7": "Random Search",
+    "8": "Random Search",
+    "9": "Random Search (sorted)",
+    "10": "Random Search",
+    "11": "Random Search (sorted)",
+    "12": "Random Search",
+    "13": "Random Search",
+    "14": "Random Search (sorted)",
+    "15": "Random Search (sorted)",
+    "16": "Random Search (sorted)",
+    "17": "Random Search",
+    "18": "Random Search",
+    "19": "Random Search",
+    "20": "Random Search",
+    "21": "Random Search",
+    "22": "Random Search (sorted)",
+    "23": "Random Search",
+    "24": "Local Search",
+    "25": "Local Search",
+    "26": "Random Search (sorted)",
+    "27": "Random Search (sorted)",
+    "28": "Random Search (sorted)",
+    "29": "Random Search",
+    "30": "Random Search",
+    "31": "Random Search (sorted)"
+  },
+  "configs": {
+    "1": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "2",
+      "promisinglist": "1",
+      "ps": 0.4,
+      "selectclause": "1",
+      "smoothingscheme": "1",
+      "adaptiveprom": "0",
+      "decreasingvariable": "3",
+      "performalternatenovelty": "1",
+      "phi": 5,
+      "theta": 6,
+      "updateschemepromlist": "3",
+      "wp": 0.01
+    },
+    "2": {
+      "adaptive": "0",
+      "clausepen": "1",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "c": 0.0005833227673741382,
+      "heuristic": "7",
+      "promisinglist": "1",
+      "ps": 0.7282932923130772,
+      "s": 0.014039351307391326,
+      "selectclause": "1",
+      "smoothingscheme": "1",
+      "adaptiveprom": "1",
+      "decreasingvariable": "6",
+      "updateschemepromlist": "3",
+      "wpwalk": 0.7129567897703898,
+      "adaptpromwalkprob": "0"
+    },
+    "3": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "1",
+      "heuristic": "12",
+      "promisinglist": "0",
+      "randomwalk": "3",
+      "tabu": 4,
+      "performalternatenovelty": "1",
+      "phi": 7,
+      "rdp": 0.07108713215296993,
+      "theta": 9
+    },
+    "4": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "1",
+      "heuristic": "7",
+      "promisinglist": "1",
+      "ps": 0.8261749978537206,
+      "selectclause": "1",
+      "smoothingscheme": "2",
+      "tabu": 16,
+      "adaptiveprom": "1",
+      "decreasingvariable": "2",
+      "phi": 4,
+      "theta": 5,
+      "updateschemepromlist": "3",
+      "adaptpromwalkprob": "0"
+    },
+    "5": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "adaptwalkprob": "1",
+      "heuristic": "1",
+      "promisinglist": "1",
+      "ps": 0.8091687597972175,
+      "randomwalk": "4",
+      "selectclause": "7",
+      "smoothingscheme": "2",
+      "adaptiveprom": "1",
+      "decreasingvariable": "7",
+      "performalternatenovelty": "0",
+      "phi": 9,
+      "rfp": 0.119174517511183,
+      "theta": 9,
+      "updateschemepromlist": "2",
+      "adaptpromwalkprob": "1",
+      "promphi": 10,
+      "promtheta": 9
+    },
+    "6": {
+      "adaptive": "0",
+      "clausepen": "1",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "c": 0.0024371950570607794,
+      "heuristic": "10",
+      "promisinglist": "1",
+      "ps": 0.6151505668644586,
+      "s": 0.010028020962349069,
+      "selectclause": "7",
+      "smoothingscheme": "2",
+      "adaptiveprom": "0",
+      "decreasingvariable": "1",
+      "novnoise": 0.4996254112671479,
+      "performalternatenovelty": "0",
+      "updateschemepromlist": "3",
+      "tiebreaking": 2
+    },
+    "7": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "8",
+      "promisinglist": "1",
+      "randomwalk": "3",
+      "adaptiveprom": "0",
+      "decreasingvariable": "7",
+      "rdp": 0.07273504430001518,
+      "updateschemepromlist": "2",
+      "promnovnoise": 0.15129884077266423
+    },
+    "8": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "randomwalk": "5",
+      "rfp": 0.06105005961195539
+    },
+    "9": {
+      "adaptive": "0",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "c": 4.033332390361467e-05,
+      "heuristic": "12",
+      "promisinglist": "1",
+      "randomwalk": "3",
+      "s": 0.0028625295373189263,
+      "tabu": 4,
+      "adaptiveprom": "1",
+      "decreasingvariable": "2",
+      "novnoise": 0.17822438750767716,
+      "performalternatenovelty": "0",
+      "rdp": 0.14591282498733488,
+      "updateschemepromlist": "2",
+      "adaptpromwalkprob": "0"
+    },
+    "10": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "2",
+      "adaptwalkprob": "1",
+      "heuristic": "7",
+      "promisinglist": "0",
+      "ps": 0.5391144557564372,
+      "randomwalk": "4",
+      "selectclause": "1",
+      "smoothingscheme": "2",
+      "tabu": 3,
+      "phi": 5,
+      "rfp": 0.06254590439249405,
+      "theta": 9
+    },
+    "11": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "adaptwalkprob": "1",
+      "heuristic": "3",
+      "promisinglist": "1",
+      "randomwalk": "4",
+      "adaptiveprom": "0",
+      "decreasingvariable": "10",
+      "performalternatenovelty": "0",
+      "phi": 7,
+      "rfp": 0.038779009743777376,
+      "theta": 4,
+      "updateschemepromlist": "1",
+      "promnovnoise": 0.7879103479861943
+    },
+    "12": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "1",
+      "heuristic": "4",
+      "promisinglist": "0",
+      "performalternatenovelty": "1",
+      "phi": 4,
+      "theta": 9
+    },
+    "13": {
+      "adaptive": "0",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "1",
+      "randomwalk": "5",
+      "tabu": 4,
+      "rfp": 0.04851705274566114
+    },
+    "14": {
+      "adaptive": "0",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "randomwalk": "1",
+      "rwp": 0.10581907197185952
+    },
+    "15": {
+      "adaptive": "0",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "randomwalk": "1",
+      "rwp": 0.02150757552417376
+    },
+    "16": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "randomwalk": "3",
+      "rdp": 0.05045557975769696
+    },
+    "17": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "adaptwalkprob": "0",
+      "heuristic": "9",
+      "promisinglist": "1",
+      "ps": 0.16196595904323002,
+      "selectclause": "7",
+      "smoothingscheme": "2",
+      "adaptiveprom": "1",
+      "decreasingvariable": "10",
+      "phi": 8,
+      "theta": 9,
+      "updateschemepromlist": "2",
+      "adaptpromwalkprob": "1",
+      "promphi": 7,
+      "promtheta": 7
+    },
+    "18": {
+      "adaptive": "1",
+      "clausepen": "1",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "9",
+      "promisinglist": "1",
+      "ps": 0.2701461046350716,
+      "randomwalk": "3",
+      "selectclause": "7",
+      "smoothingscheme": "1",
+      "tabu": 2,
+      "adaptiveprom": "0",
+      "decreasingvariable": "10",
+      "phi": 5,
+      "rdp": 0.1082191142706868,
+      "theta": 6,
+      "updateschemepromlist": "2",
+      "promnovnoise": 0.1340198065698209
+    },
+    "19": {
+      "adaptive": "0",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "c": 0.01450204054539683,
+      "heuristic": "7",
+      "promisinglist": "1",
+      "randomwalk": "3",
+      "s": 0.007160152451242475,
+      "tabu": 12,
+      "adaptiveprom": "0",
+      "decreasingvariable": "3",
+      "rdp": 0.05122308847890231,
+      "updateschemepromlist": "2",
+      "wpwalk": 0.6574892749659328
+    },
+    "20": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "2",
+      "promisinglist": "1",
+      "randomwalk": "5",
+      "adaptiveprom": "1",
+      "decreasingvariable": "11",
+      "performalternatenovelty": "0",
+      "phi": 8,
+      "rfp": 0.10917395715975617,
+      "theta": 7,
+      "updateschemepromlist": "2",
+      "wp": 0.06536944879078485,
+      "adaptpromwalkprob": "0",
+      "promphi": 7,
+      "promtheta": 4,
+      "promwp": 0.18360816023123766
+    },
+    "21": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "0",
+      "singleclause": "0",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "2",
+      "tabu": 14
+    },
+    "22": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "randomwalk": "3",
+      "rdp": 0.07744364659432318
+    },
+    "23": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "0",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "9",
+      "promisinglist": "0",
+      "tabu": 20,
+      "phi": 3,
+      "theta": 9
+    },
+    "24": {
+      "adaptive": "0",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "1",
+      "randomwalk": "3",
+      "tabu": 1,
+      "rdp": 0.05056824304181341
+    },
+    "25": {
+      "adaptive": "0",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "1",
+      "randomwalk": "3",
+      "tabu": 1,
+      "rdp": 0.05045557975769696
+    },
+    "26": {
+      "adaptive": "0",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "1",
+      "randomwalk": "3",
+      "tabu": 4,
+      "rdp": 0.05153402680905864
+    },
+    "27": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "randomwalk": "3",
+      "rdp": 0.05100689251008199
+    },
+    "28": {
+      "adaptive": "1",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "2",
+      "randomwalk": "3",
+      "rdp": 0.1376570190688402
+    },
+    "29": {
+      "adaptive": "0",
+      "clausepen": "2",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "1",
+      "c": 0.00011825274745443846,
+      "heuristic": "12",
+      "promisinglist": "1",
+      "randomwalk": "3",
+      "s": 0.0019171613325061688,
+      "tabu": 11,
+      "adaptiveprom": "0",
+      "decreasingvariable": "11",
+      "novnoise": 0.5909578191967515,
+      "performalternatenovelty": "0",
+      "rdp": 0.08372119354085775,
+      "updateschemepromlist": "1",
+      "promnovnoise": 0.2293926564828264
+    },
+    "30": {
+      "adaptive": "1",
+      "clausepen": "0",
+      "performrandomwalk": "1",
+      "singleclause": "1",
+      "tabusearch": "0",
+      "adaptivenoisescheme": "1",
+      "adaptwalkprob": "0",
+      "heuristic": "5",
+      "promisinglist": "0",
+      "randomwalk": "1",
+      "phi": 5,
+      "rwp": 0.08581220748636305,
+      "theta": 9
+    },
+    "31": {
+      "adaptive": "0",
+      "clausepen": "1",
+      "performrandomwalk": "1",
+      "singleclause": "0",
+      "tabusearch": "0",
+      "randomwalk": "3",
+      "smoothingscheme": "2",
+      "rdp": 0.07199589069985204
+    }
+  }
+}

@@ -1,0 +1,824 @@
+{
+  "hyperparameters": [
+    {
+      "name": "adaptive",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "clausepen",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1",
+        "2"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "performrandomwalk",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    {
+      "name": "singleclause",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "tabusearch",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    {
+      "name": "adaptivenoisescheme",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "2"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "adaptwalkprob",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    {
+      "name": "c",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 1e-06,
+      "upper": 0.1,
+      "default": 0.01
+    },
+    {
+      "name": "heuristic",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "default": "2"
+    },
+    {
+      "name": "promisinglist",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "ps",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.1,
+      "upper": 1.0,
+      "default": 0.4
+    },
+    {
+      "name": "randomwalk",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "3",
+        "4",
+        "5"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "s",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 0.001,
+      "upper": 0.1,
+      "default": 0.01
+    },
+    {
+      "name": "selectclause",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "7"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "smoothingscheme",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "2"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "tabu",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 20,
+      "default": 1
+    },
+    {
+      "name": "adaptiveprom",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    {
+      "name": "decreasingvariable",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "default": "3"
+    },
+    {
+      "name": "dp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.2,
+      "default": 0.05
+    },
+    {
+      "name": "novnoise",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.1,
+      "upper": 0.8,
+      "default": 0.5
+    },
+    {
+      "name": "performalternatenovelty",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "1"
+    },
+    {
+      "name": "phi",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 10,
+      "default": 5
+    },
+    {
+      "name": "rdp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.15,
+      "default": 0.05
+    },
+    {
+      "name": "rfp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.15,
+      "default": 0.01
+    },
+    {
+      "name": "rwp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.15,
+      "default": 0.01
+    },
+    {
+      "name": "theta",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 10,
+      "default": 6
+    },
+    {
+      "name": "updateschemepromlist",
+      "type": "categorical",
+      "choices": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "3"
+    },
+    {
+      "name": "wp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.2,
+      "default": 0.01
+    },
+    {
+      "name": "wpwalk",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.1,
+      "upper": 0.8,
+      "default": 0.5
+    },
+    {
+      "name": "adaptpromwalkprob",
+      "type": "categorical",
+      "choices": [
+        "0",
+        "1"
+      ],
+      "default": "0"
+    },
+    {
+      "name": "promnovnoise",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.1,
+      "upper": 0.8,
+      "default": 0.5
+    },
+    {
+      "name": "promphi",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 10,
+      "default": 5
+    },
+    {
+      "name": "promtheta",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 10,
+      "default": 6
+    },
+    {
+      "name": "tiebreaking",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 4,
+      "default": 1
+    },
+    {
+      "name": "promdp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.2,
+      "default": 0.05
+    },
+    {
+      "name": "promwp",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.2,
+      "default": 0.01
+    }
+  ],
+  "conditions": [
+    {
+      "child": "adaptivenoisescheme",
+      "parent": "adaptive",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "adaptwalkprob",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "adaptwalkprob",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "adaptwalkprob",
+          "parent": "singleclause",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "c",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "c",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "0"
+        },
+        {
+          "child": "c",
+          "parent": "singleclause",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "s",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "s",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "0"
+        },
+        {
+          "child": "s",
+          "parent": "singleclause",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "novnoise",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "novnoise",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "child": "novnoise",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "child": "phi",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "phi",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "phi",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "theta",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "theta",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "theta",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "wpwalk",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "wpwalk",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "child": "wpwalk",
+          "parent": "adaptive",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "child": "ps",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "ps",
+          "parent": "clausepen",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "ps",
+          "parent": "singleclause",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "selectclause",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "selectclause",
+          "parent": "clausepen",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "selectclause",
+          "parent": "singleclause",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "smoothingscheme",
+      "parent": "clausepen",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "randomwalk",
+      "parent": "performrandomwalk",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "heuristic",
+      "parent": "singleclause",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "promisinglist",
+      "parent": "singleclause",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "tabu",
+      "parent": "tabusearch",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "dp",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "dp",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "3",
+            "4",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "child": "dp",
+          "parent": "adaptwalkprob",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "child": "wp",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "wp",
+          "parent": "heuristic",
+          "type": "IN",
+          "values": [
+            "2",
+            "6",
+            "11"
+          ]
+        },
+        {
+          "child": "wp",
+          "parent": "adaptwalkprob",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "child": "performalternatenovelty",
+      "parent": "heuristic",
+      "type": "IN",
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "child": "adaptiveprom",
+      "parent": "promisinglist",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "decreasingvariable",
+      "parent": "promisinglist",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "updateschemepromlist",
+      "parent": "promisinglist",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "adaptpromwalkprob",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "adaptpromwalkprob",
+          "parent": "adaptiveprom",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "adaptpromwalkprob",
+          "parent": "promisinglist",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "promnovnoise",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "promnovnoise",
+          "parent": "decreasingvariable",
+          "type": "IN",
+          "values": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "child": "promnovnoise",
+          "parent": "adaptiveprom",
+          "type": "EQ",
+          "value": "0"
+        },
+        {
+          "child": "promnovnoise",
+          "parent": "promisinglist",
+          "type": "EQ",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "child": "rdp",
+      "parent": "randomwalk",
+      "type": "EQ",
+      "value": "3"
+    },
+    {
+      "child": "rfp",
+      "parent": "randomwalk",
+      "type": "IN",
+      "values": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "child": "rwp",
+      "parent": "randomwalk",
+      "type": "EQ",
+      "value": "1"
+    },
+    {
+      "child": "promphi",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "promphi",
+          "parent": "adaptiveprom",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "promphi",
+          "parent": "decreasingvariable",
+          "type": "IN",
+          "values": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "promtheta",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "promtheta",
+          "parent": "adaptiveprom",
+          "type": "EQ",
+          "value": "1"
+        },
+        {
+          "child": "promtheta",
+          "parent": "decreasingvariable",
+          "type": "IN",
+          "values": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "tiebreaking",
+      "parent": "decreasingvariable",
+      "type": "IN",
+      "values": [
+        "1",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "child": "promdp",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "promdp",
+          "parent": "decreasingvariable",
+          "type": "IN",
+          "values": [
+            "8",
+            "10"
+          ]
+        },
+        {
+          "child": "promdp",
+          "parent": "adaptpromwalkprob",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "child": "promwp",
+      "type": "AND",
+      "conditions": [
+        {
+          "child": "promwp",
+          "parent": "decreasingvariable",
+          "type": "IN",
+          "values": [
+            "9",
+            "11"
+          ]
+        },
+        {
+          "child": "promwp",
+          "parent": "adaptpromwalkprob",
+          "type": "EQ",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "forbiddens": [],
+  "python_module_version": "0.4.10",
+  "json_format_version": 0.1
+}

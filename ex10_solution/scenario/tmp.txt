@@ -1,0 +1,743 @@
+Configuration:                                          |         |     Cost:   26.07610
+                      adaptive:                     '1' |         |  Runtime:   3.57610
+           adaptivenoisescheme:                     '1' |         | Timeouts:   1
+                  adaptiveprom:                     '0' |         |  Default
+                 adaptwalkprob:                     '0' |         |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                     '3' |         |
+                     heuristic:                     '2' |         |
+       performalternatenovelty:                     '1' |         |
+             performrandomwalk:                     '0' |         |
+                           phi:                       5 |         |
+                 promisinglist:                     '1' |         |
+                            ps:                     0.4 |         |
+                  selectclause:                     '1' |         |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '1' |         |
+                    tabusearch:                     '0' |         |
+                         theta:                       6 |         |
+          updateschemepromlist:                     '3' |         |
+                            wp:                    0.01 |         |
+
+Configuration:                                          | Changed |     Cost:   25.15093
+                      adaptive:                     '0' |    X    |  Runtime:   2.65092
+                  adaptiveprom:                     '1' |    X    | Timeouts:   2
+             adaptpromwalkprob:                     '0' |    X    |  Changed:  15
+                             c:   0.0005833227673741382 |    X    |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                     '6' |    X    |
+                     heuristic:                     '7' |    X    |
+             performrandomwalk:                     '0' |         |
+                 promisinglist:                     '1' |         |
+                            ps:      0.7282932923130772 |    X    |
+                             s:    0.014039351307391326 |    X    |
+                  selectclause:                     '1' |         |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '1' |         |
+                    tabusearch:                     '0' |         |
+          updateschemepromlist:                     '3' |         |
+                        wpwalk:      0.7129567897703898 |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                           phi:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '1' |         |  Runtime:       nan
+           adaptivenoisescheme:                     '1' |         | Timeouts:   0
+                 adaptwalkprob:                     '1' |    X    |  Changed:  18
+                     clausepen:                     '2' |    X    |
+                     heuristic:                    '12' |    X    |
+       performalternatenovelty:                     '1' |         |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       7 |    X    |
+                 promisinglist:                     '0' |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.07108713215296993 |    X    |
+                  singleclause:                     '1' |         |
+                          tabu:                       4 |    X    |
+                    tabusearch:                     '1' |    X    |
+                         theta:                       9 |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                            ps:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   20.10562
+                      adaptive:                     '1' |         |  Runtime:   2.10562
+           adaptivenoisescheme:                     '1' |         | Timeouts:   2
+                  adaptiveprom:                     '1' |    X    |  Changed:  13
+             adaptpromwalkprob:                     '0' |    X    |
+                 adaptwalkprob:                     '1' |    X    |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                     '2' |    X    |
+                     heuristic:                     '7' |    X    |
+             performrandomwalk:                     '0' |         |
+                           phi:                       4 |    X    |
+                 promisinglist:                     '1' |         |
+                            ps:      0.8261749978537206 |    X    |
+                  selectclause:                     '1' |         |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '2' |    X    |
+                          tabu:                      16 |    X    |
+                    tabusearch:                     '1' |    X    |
+                         theta:                       5 |    X    |
+          updateschemepromlist:                     '3' |         |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   31.27290
+                      adaptive:                     '1' |         |  Runtime:   3.14790
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   5
+                  adaptiveprom:                     '1' |    X    |  Changed:  19
+             adaptpromwalkprob:                     '1' |    X    |
+                 adaptwalkprob:                     '1' |    X    |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                     '7' |    X    |
+                     heuristic:                     '1' |    X    |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       9 |    X    |
+                 promisinglist:                     '1' |         |
+                       promphi:                      10 |    X    |
+                     promtheta:                       9 |    X    |
+                            ps:      0.8091687597972175 |    X    |
+                    randomwalk:                     '4' |    X    |
+                           rfp:       0.119174517511183 |    X    |
+                  selectclause:                     '7' |    X    |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '2' |    X    |
+                    tabusearch:                     '0' |         |
+                         theta:                       9 |    X    |
+          updateschemepromlist:                     '2' |    X    |
+                            wp:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   34.54183
+                      adaptive:                     '0' |    X    |  Runtime:   4.54183
+                  adaptiveprom:                     '0' |         | Timeouts:   2
+                             c:   0.0024371950570607794 |    X    |  Changed:  16
+                     clausepen:                     '1' |         |
+            decreasingvariable:                     '1' |    X    |
+                     heuristic:                    '10' |    X    |
+                      novnoise:      0.4996254112671479 |    X    |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '0' |         |
+                 promisinglist:                     '1' |         |
+                            ps:      0.6151505668644586 |    X    |
+                             s:    0.010028020962349069 |    X    |
+                  selectclause:                     '7' |    X    |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '2' |    X    |
+                    tabusearch:                     '0' |         |
+                   tiebreaking:                       2 |    X    |
+          updateschemepromlist:                     '3' |         |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+                           phi:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   0.04510
+                      adaptive:                     '1' |         |  Runtime:   0.04510
+           adaptivenoisescheme:                     '1' |         | Timeouts:   0
+                  adaptiveprom:                     '0' |         |  Changed:  15
+                 adaptwalkprob:                     '0' |         |
+                     clausepen:                     '0' |    X    |
+            decreasingvariable:                     '7' |    X    |
+                     heuristic:                     '8' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                 promisinglist:                     '1' |         |
+                  promnovnoise:     0.15129884077266423 |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.07273504430001518 |    X    |
+                  singleclause:                     '1' |         |
+                    tabusearch:                     '0' |         |
+          updateschemepromlist:                     '2' |    X    |
+               smoothingscheme:                    None |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                           phi:                    None |    X    |
+                  selectclause:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   28.68133
+                      adaptive:                     '1' |         |  Runtime:   3.36883
+           adaptivenoisescheme:                     '1' |         | Timeouts:   9
+                     clausepen:                     '2' |    X    |  Changed:  18
+             performrandomwalk:                     '1' |    X    |
+                    randomwalk:                     '5' |    X    |
+                           rfp:     0.06105005961195539 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   41.82418
+                      adaptive:                     '0' |    X    |  Runtime:   4.32418
+                  adaptiveprom:                     '1' |    X    | Timeouts:   5
+             adaptpromwalkprob:                     '0' |    X    |  Changed:  24
+                             c:   4.033332390361467e-05 |    X    |
+                     clausepen:                     '2' |    X    |
+            decreasingvariable:                     '2' |    X    |
+                     heuristic:                    '12' |    X    |
+                      novnoise:     0.17822438750767716 |    X    |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                 promisinglist:                     '1' |         |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.14591282498733488 |    X    |
+                             s:   0.0028625295373189263 |    X    |
+                  singleclause:                     '1' |         |
+                          tabu:                       4 |    X    |
+                    tabusearch:                     '1' |    X    |
+          updateschemepromlist:                     '2' |    X    |
+               smoothingscheme:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+                            ps:                    None |    X    |
+                           phi:                    None |    X    |
+                  selectclause:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   42.86956
+                      adaptive:                     '1' |         |  Runtime:   4.29813
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   6
+                 adaptwalkprob:                     '1' |    X    |  Changed:  17
+                     clausepen:                     '1' |         |
+                     heuristic:                     '7' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       5 |         |
+                 promisinglist:                     '0' |    X    |
+                            ps:      0.5391144557564372 |    X    |
+                    randomwalk:                     '4' |    X    |
+                           rfp:     0.06254590439249405 |    X    |
+                  selectclause:                     '1' |         |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '2' |    X    |
+                          tabu:                       3 |    X    |
+                    tabusearch:                     '1' |    X    |
+                         theta:                       9 |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   33.35830
+                      adaptive:                     '1' |         |  Runtime:   3.35830
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   2
+                  adaptiveprom:                     '0' |         |  Changed:  17
+                 adaptwalkprob:                     '1' |    X    |
+                     clausepen:                     '0' |    X    |
+            decreasingvariable:                    '10' |    X    |
+                     heuristic:                     '3' |    X    |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       7 |    X    |
+                 promisinglist:                     '1' |         |
+                  promnovnoise:      0.7879103479861943 |    X    |
+                    randomwalk:                     '4' |    X    |
+                           rfp:    0.038779009743777376 |    X    |
+                  singleclause:                     '1' |         |
+                    tabusearch:                     '0' |         |
+                         theta:                       4 |    X    |
+          updateschemepromlist:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                            wp:                    None |    X    |
+                  selectclause:                    None |    X    |
+                            ps:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   42.22503
+                      adaptive:                     '1' |         |  Runtime:   4.72503
+           adaptivenoisescheme:                     '1' |         | Timeouts:   5
+                 adaptwalkprob:                     '1' |    X    |  Changed:  13
+                     clausepen:                     '2' |    X    |
+                     heuristic:                     '4' |    X    |
+       performalternatenovelty:                     '1' |         |
+             performrandomwalk:                     '0' |         |
+                           phi:                       4 |    X    |
+                 promisinglist:                     '0' |    X    |
+                  singleclause:                     '1' |         |
+                    tabusearch:                     '0' |         |
+                         theta:                       9 |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                            ps:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                     clausepen:                     '0' |    X    | Timeouts:   0
+             performrandomwalk:                     '1' |    X    |  Changed:  22
+                    randomwalk:                     '5' |    X    |
+                           rfp:     0.04851705274566114 |    X    |
+                  singleclause:                     '0' |    X    |
+                          tabu:                       4 |    X    |
+                    tabusearch:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                     clausepen:                     '0' |    X    | Timeouts:   0
+             performrandomwalk:                     '1' |    X    |  Changed:  20
+                    randomwalk:                     '1' |    X    |
+                           rwp:     0.10581907197185952 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '0' |    X    |  Runtime:   5.00000
+                     clausepen:                     '0' |    X    | Timeouts:   3
+             performrandomwalk:                     '1' |    X    |  Changed:  20
+                    randomwalk:                     '1' |    X    |
+                           rwp:     0.02150757552417376 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   21.60825
+                      adaptive:                     '1' |         |  Runtime:   2.73728
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:  13
+                     clausepen:                     '2' |    X    |  Changed:  19
+             performrandomwalk:                     '1' |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05045557975769696 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '1' |         |  Runtime:       nan
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   0
+                  adaptiveprom:                     '1' |    X    |  Changed:  15
+             adaptpromwalkprob:                     '1' |    X    |
+                 adaptwalkprob:                     '0' |         |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                    '10' |    X    |
+                     heuristic:                     '9' |    X    |
+             performrandomwalk:                     '0' |         |
+                           phi:                       8 |    X    |
+                 promisinglist:                     '1' |         |
+                       promphi:                       7 |    X    |
+                     promtheta:                       7 |    X    |
+                            ps:     0.16196595904323002 |    X    |
+                  selectclause:                     '7' |    X    |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '2' |    X    |
+                    tabusearch:                     '0' |         |
+                         theta:                       9 |    X    |
+          updateschemepromlist:                     '2' |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '1' |         |  Runtime:   5.00000
+           adaptivenoisescheme:                     '1' |         | Timeouts:   1
+                  adaptiveprom:                     '0' |         |  Changed:  13
+                 adaptwalkprob:                     '0' |         |
+                     clausepen:                     '1' |         |
+            decreasingvariable:                    '10' |    X    |
+                     heuristic:                     '9' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       5 |         |
+                 promisinglist:                     '1' |         |
+                  promnovnoise:      0.1340198065698209 |    X    |
+                            ps:      0.2701461046350716 |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:      0.1082191142706868 |    X    |
+                  selectclause:                     '7' |    X    |
+                  singleclause:                     '1' |         |
+               smoothingscheme:                     '1' |         |
+                          tabu:                       2 |    X    |
+                    tabusearch:                     '1' |    X    |
+                         theta:                       6 |         |
+          updateschemepromlist:                     '2' |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                  adaptiveprom:                     '0' |         | Timeouts:   0
+                             c:     0.01450204054539683 |    X    |  Changed:  21
+                     clausepen:                     '2' |    X    |
+            decreasingvariable:                     '3' |         |
+                     heuristic:                     '7' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                 promisinglist:                     '1' |         |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05122308847890231 |    X    |
+                             s:    0.007160152451242475 |    X    |
+                  singleclause:                     '1' |         |
+                          tabu:                      12 |    X    |
+                    tabusearch:                     '1' |    X    |
+          updateschemepromlist:                     '2' |    X    |
+                        wpwalk:      0.6574892749659328 |    X    |
+               smoothingscheme:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                           phi:                    None |    X    |
+                  selectclause:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   42.87204
+                      adaptive:                     '1' |         |  Runtime:   4.30061
+           adaptivenoisescheme:                     '1' |         | Timeouts:   6
+                  adaptiveprom:                     '1' |    X    |  Changed:  18
+             adaptpromwalkprob:                     '0' |    X    |
+                 adaptwalkprob:                     '0' |         |
+                     clausepen:                     '2' |    X    |
+            decreasingvariable:                    '11' |    X    |
+                     heuristic:                     '2' |         |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       8 |    X    |
+                 promisinglist:                     '1' |         |
+                       promphi:                       7 |    X    |
+                     promtheta:                       4 |    X    |
+                        promwp:     0.18360816023123766 |    X    |
+                    randomwalk:                     '5' |    X    |
+                           rfp:     0.10917395715975617 |    X    |
+                  singleclause:                     '1' |         |
+                    tabusearch:                     '0' |         |
+                         theta:                       7 |    X    |
+          updateschemepromlist:                     '2' |    X    |
+                            wp:     0.06536944879078485 |    X    |
+               smoothingscheme:                    None |    X    |
+                  selectclause:                    None |    X    |
+                            ps:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '1' |         |  Runtime:   5.00000
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   5
+                     clausepen:                     '0' |    X    |  Changed:  18
+             performrandomwalk:                     '0' |         |
+                  singleclause:                     '0' |    X    |
+                          tabu:                      14 |    X    |
+                    tabusearch:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   34.58303
+                      adaptive:                     '1' |         |  Runtime:   4.58303
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   2
+                     clausepen:                     '2' |    X    |  Changed:  19
+             performrandomwalk:                     '1' |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.07744364659432318 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '1' |         |  Runtime:       nan
+           adaptivenoisescheme:                     '1' |         | Timeouts:   0
+                 adaptwalkprob:                     '0' |         |  Changed:  15
+                     clausepen:                     '0' |    X    |
+                     heuristic:                     '9' |    X    |
+             performrandomwalk:                     '0' |         |
+                           phi:                       3 |    X    |
+                 promisinglist:                     '0' |    X    |
+                  singleclause:                     '1' |         |
+                          tabu:                      20 |    X    |
+                    tabusearch:                     '1' |    X    |
+                         theta:                       9 |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   0.85460
+                      adaptive:                     '0' |    X    |  Runtime:   0.85460
+                     clausepen:                     '2' |    X    | Timeouts:   0
+             performrandomwalk:                     '1' |    X    |  Changed:  22
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05056824304181341 |    X    |
+                  singleclause:                     '0' |    X    |
+                          tabu:                       1 |    X    |
+                    tabusearch:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                     clausepen:                     '2' |    X    | Timeouts:   0
+             performrandomwalk:                     '1' |    X    |  Changed:  22
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05045557975769696 |    X    |
+                  singleclause:                     '0' |    X    |
+                          tabu:                       1 |    X    |
+                    tabusearch:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '0' |    X    |  Runtime:   5.00000
+                     clausepen:                     '0' |    X    | Timeouts:   3
+             performrandomwalk:                     '1' |    X    |  Changed:  22
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05153402680905864 |    X    |
+                  singleclause:                     '0' |    X    |
+                          tabu:                       4 |    X    |
+                    tabusearch:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '1' |         |  Runtime:   5.00000
+           adaptivenoisescheme:                     '1' |         | Timeouts:   3
+                     clausepen:                     '0' |    X    |  Changed:  18
+             performrandomwalk:                     '1' |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.05100689251008199 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   33.34467
+                      adaptive:                     '1' |         |  Runtime:   3.34467
+           adaptivenoisescheme:                     '2' |    X    | Timeouts:   2
+                     clausepen:                     '2' |    X    |  Changed:  19
+             performrandomwalk:                     '1' |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:      0.1376570190688402 |    X    |
+                  singleclause:                     '0' |    X    |
+                    tabusearch:                     '0' |         |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                  adaptiveprom:                     '0' |         | Timeouts:   0
+                             c:  0.00011825274745443846 |    X    |  Changed:  23
+                     clausepen:                     '2' |    X    |
+            decreasingvariable:                    '11' |    X    |
+                     heuristic:                    '12' |    X    |
+                      novnoise:      0.5909578191967515 |    X    |
+       performalternatenovelty:                     '0' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                 promisinglist:                     '1' |         |
+                  promnovnoise:      0.2293926564828264 |    X    |
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.08372119354085775 |    X    |
+                             s:   0.0019171613325061688 |    X    |
+                  singleclause:                     '1' |         |
+                          tabu:                      11 |    X    |
+                    tabusearch:                     '1' |    X    |
+          updateschemepromlist:                     '1' |    X    |
+               smoothingscheme:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+                            ps:                    None |    X    |
+                           phi:                    None |    X    |
+                  selectclause:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:   50.00000
+                      adaptive:                     '1' |         |  Runtime:   5.00000
+           adaptivenoisescheme:                     '1' |         | Timeouts:   2
+                 adaptwalkprob:                     '0' |         |  Changed:  15
+                     clausepen:                     '0' |    X    |
+                     heuristic:                     '5' |    X    |
+             performrandomwalk:                     '1' |    X    |
+                           phi:                       5 |         |
+                 promisinglist:                     '0' |    X    |
+                    randomwalk:                     '1' |    X    |
+                           rwp:     0.08581220748636305 |    X    |
+                  singleclause:                     '1' |         |
+                    tabusearch:                     '0' |         |
+                         theta:                       9 |    X    |
+               smoothingscheme:                    None |    X    |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+
+Configuration:                                          | Changed |     Cost:       nan
+                      adaptive:                     '0' |    X    |  Runtime:       nan
+                     clausepen:                     '1' |         | Timeouts:   0
+             performrandomwalk:                     '1' |    X    |  Changed:  19
+                    randomwalk:                     '3' |    X    |
+                           rdp:     0.07199589069985204 |    X    |
+                  singleclause:                     '0' |    X    |
+               smoothingscheme:                     '2' |    X    |
+                    tabusearch:                     '0' |         |
+                  adaptiveprom:                    None |    X    |
+                            wp:                    None |    X    |
+                 adaptwalkprob:                    None |    X    |
+       performalternatenovelty:                    None |    X    |
+                            ps:                    None |    X    |
+                     heuristic:                    None |    X    |
+                           phi:                    None |    X    |
+          updateschemepromlist:                    None |    X    |
+                  selectclause:                    None |    X    |
+            decreasingvariable:                    None |    X    |
+           adaptivenoisescheme:                    None |    X    |
+                         theta:                    None |    X    |
+                 promisinglist:                    None |    X    |
+
