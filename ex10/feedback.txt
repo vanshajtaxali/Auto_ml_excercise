@@ -1,0 +1,10 @@
+1. SMAC is not a SAT solver. It is an optimization tool that uses Bayesian optimization to find the best (hyper-)parameters
+for a given target function/algorithm.
+
+2. For me it looks like you used an older version of SMAC with a newer version of the pyrfr or vica versa when the error happened.
+
+The scenario, the training and test split, and the running of SMAC seems to be all correctly done.
+However you did not use SMACs validation script to evaluate the final incumbent and the defualt configuration on the test set.
+The data you present seems to be on the (incomplete) Training data.
+
+7/10
